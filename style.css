@@ -17,6 +17,18 @@ a:hover {
     opacity: 0.8;
 }
 
+.container {
+    width: 84%;
+    margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 91%;
+        max-width: 1240px;
+    }
+}
+
 .sr-only {
     border: 0;
     clip: rect(0 0 0 0);
@@ -51,6 +63,19 @@ a:hover {
     line-height: 1.4;
 }
 
+@media (min-width: 900px) {
+    .site img {
+        width: 59px;
+        margin-right: 18px;
+    }
+    .site .corp {
+        font-size: 20px;
+    }
+    .site .desc {
+        font-size: 12px;
+    }
+}
+
 .nav-button {
     box-sizing: content-box;
     padding: 0;
@@ -74,4 +99,17 @@ a:hover {
 .nav-button::before {
     transform: translateY(-5px);
     box-shadow: 0 6px currentColor;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+}
+
+@media (min-width: 900px) {
+    .header .container {
+        height: 100px;
+    }
 }
