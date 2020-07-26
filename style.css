@@ -205,3 +205,121 @@ a:hover {
         font-size: 20px;
     }
 }
+
+.service {
+    padding: 67px 0;
+    text-align: center;
+}
+
+.service h2 {
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    border-bottom: dotted 2px currentColor;
+    font-size: 24px;
+    color: #2E5180;
+}
+
+.service h2+p {
+    font-size: 16px;
+    color: #2E5180;
+}
+
+@media (min-width: 900px) {
+    .service {
+        padding: 95px 0 87px;
+    }
+    .service h2 {
+        font-size: 36px;
+    }
+}
+
+.details {
+    margin-top: 52px;
+    color: #333333;
+}
+
+.detail:not(:last-child) {
+    margin-bottom: 68px;
+}
+
+.detail h3 {
+    margin-top: 20px;
+    margin-bottom: 16px;
+    line-height: 1.75;
+}
+
+.detail p {
+    max-width: 264px;
+    font-size: 12px;
+    line-height: 2;
+    margin: 0 auto 24px;
+}
+
+.detail figure {
+    margin-bottom: 24px;
+    height: 246px;
+    background-position: center;
+    background-size: cover;
+}
+
+.detail.office figure {
+    background-image: url(img/office.jpg);
+}
+
+.detail.manage figure {
+    background-image: url(img/manage.jpg);
+}
+
+.detail.research figure {
+    background-image: url(img/research.jpg);
+}
+
+.btn {
+    display: block;
+    width: 208px;
+    margin: 0 auto;
+    padding: 11px 11px 13px;
+    box-sizing: border-box;
+    border: solid 2px currentColor;
+    border-radius: 24px;
+    color: #2E5180;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .details {
+        display: flex;
+        margin-top: 75px;
+    }
+    .detail {
+        flex: 1;
+        margin-right: 3.22%;
+        display: flex;
+        flex-direction: column;
+    }
+    .detail:first-child {
+        margin-left: 3.22%;
+    }
+    .detail:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .detail h3 {
+        margin-bottom: 26px;
+        font-size: 30px;
+        line-height: 1.4;
+    }
+    .detail p {
+        width: 78%;
+        max-width: none;
+    }
+    .detail figure {
+        height: 360px;
+        margin-bottom: 33px;
+    }
+    .detail .btn {
+        margin-top: auto;
+    }
+}
