@@ -169,3 +169,39 @@ a:hover {
         min-width: 637.78px;
     }
 }
+
+.message {
+    background-color: #2E5180;
+    color: #ffffff;
+}
+
+.message h2 {
+    font-size: 24px;
+    margin-bottom: 38px;
+    line-height: 1.67;
+    text-align: center;
+}
+
+.message p {
+    font-size: 14px;
+    line-height: 1.86;
+    max-width: 640px;
+    margin: auto;
+    padding: 67px 0;
+}
+
+@media (min-width: 900px) {
+    .message {
+        padding: 81px 0;
+    }
+    .message h2 {
+        font-size: 36px;
+        line-height: 1.33;
+    }
+}
+
+@media (max-width: 374px) {
+    .message h2 {
+        font-size: 20px;
+    }
+}
